@@ -1,0 +1,95 @@
+.footer {
+  background-color: var(--blue-cl);
+  font-family: Mada;
+  .container {
+    position: relative;
+    &::after {
+      content: "";
+      width: calc(100% - 30px);
+      height: 0.5px;
+      position: absolute;
+      background-color: var(--white-cl);
+      opacity: 0.5;
+      top: 222px;
+    }
+  }
+  .colfooter,
+  .colfooter__left {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 71px;
+    padding-bottom: 10px;
+    position: relative;
+    .title {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 39px;
+      .item {
+        margin-left: 100px;
+        li a {
+          color: var(--white-cl);
+          text-decoration-line: none;
+          line-height: 33px;
+        }
+        .item__title {
+          color: var(--Gray-6, #f2f2f2);
+          font-family: Mada;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .heading {
+      font-family: ms;
+      font-size: 40px;
+    }
+    .search .content input {
+      display: flex;
+      align-items: stretch;
+      position: relative;
+      width: 375px;
+      font-size: 15px;
+      border: none;
+      outline: none;
+      display: inline-block;
+      line-height: 70px;
+      padding: 0 0px 0 20px;
+    }
+    .textbox {
+      .info {
+        padding-top: 78px;
+        margin-bottom: 65px;
+        color: var(--white-cl);
+        &__social {
+          margin-top: 30px;
+          display: flex;
+          img {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer .container .colfooter__left .footer .container .colfooter .textbox {
+  left: 0;
+  width: 60%;
+}
+
+.footer .container .colfooter .textbox .heading {
+  margin-bottom: 0;
+}
+
+.footer .container .colfooter__left .title .item a {
+  color: var(--white-cl);
+  display: inline-block;
+  transition: var(--time-transition);
+  &:hover {
+    opacity: var(--opacity);
+  }
+}
